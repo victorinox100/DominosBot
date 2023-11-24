@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>HOLA</pattern>
+    <template>Con quién tengo el gusto?</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template><random>
+        <li><star/> se bienvenid@ a Domino's Pizza, desea ordenar una pizza o combo?</li>
+        <li><star/> se bienvenid@ a Domino's Pizza, le ofrecemos 2 opciones, pizza o combos, cual desea elegir?</li>
+    </random>
+    </template>
+</category>
+
+<category>
+    <pattern>COMBOS</pattern>
+    <template>Nuestros combos incluyen pizza y refresco <srai>PIZZA</srai></template>
+</category>
+<category>
+    <pattern>COMBO</pattern>
+    <template>Nuestros combos incluyen pizza y refresco <srai>PIZZA</srai></template>
+</category>
+
+<category>
+    <pattern>PIZZA</pattern>
+    <template>Te ofrecemos distintas especialidades: pepperoni, hawaiwana, carnes frías y mexicana, cual deseas pedir?</template>
+</category>
+
+<category>
+    <pattern>PIZZAS</pattern>
+    <template>Te ofrecemos distintas especialidades: pepperoni, hawaiwana, carnes frías y mexicana, cual deseas pedir?</template>
+</category>
+
+<category>
+    <pattern>PEPPERONI</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+
+<category>
+    <pattern>HAWAIWANA</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+
+<category>
+    <pattern>CARNES</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+<category>
+    <pattern>CARNES *</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+<category>
+    <pattern>* FRIAS</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+
+<category>
+    <pattern>MEXICANA</pattern>
+    <template><srai> TAMAÑO </srai></template>
+</category>
+
+<category>
+    <pattern>TAMAÑO</pattern>
+    <template>Contamos con 3 tamaños diferentes: individual, mediana y familiar, cual desea elegir?</template>
+</category>
+
+<category>
+    <pattern>INDIVIDUAL</pattern>
+    <template>Usted a elegido el tamaño individual, desea continuar agregandole a su orden o finalizarla?</template>
+</category>
+<category>
+    <pattern>MEDIANA</pattern>
+    <template>Usted a elegido el tamaño mediana, desea continuar agregandole a su orden o finalizarla?</template>
+</category>
+<category>
+    <pattern>FAMILIAR</pattern>
+    <template>Usted a elegido el tamaño familiar, desea continuar agregandole a su orden o finalizarla?</template>
+</category>
+
+<category>
+    <pattern>REFRESCO</pattern>
+    <template>Contamos con distintos refrescos: Mirinda, Coca Cola y Squirt, cual desea elegir?</template>
+</category>
+<category>
+    <pattern>CONTINUAR</pattern>
+    <template>Contamos con distintos refrescos: Mirinda, Coca Cola y Squirt, cual desea elegir?</template>
+</category>
+<category>
+    <pattern>SI</pattern>
+    <template>Contamos con distintos refrescos: Mirinda, Coca Cola y Squirt, cual desea elegir?</template>
+</category>
+
+<category>
+    <pattern>FINALIZAR</pattern>
+    <template>Hemos tomado su orden, puede pasar a recoger su pedido en un tiempo aproximado de 30 minutos a la sucursal de Picaho, gracias por su preferencia</template>
+</category>
+<category>
+    <pattern>NO</pattern>
+    <template>Hemos tomado su orden, puede pasar a recoger su pedido en un tiempo aproximado de 30 minutos a la sucursal de Picaho, gracias por su preferencia</template>
+</category>
+
+<category>
+    <pattern>MIRINDA</pattern>
+    <template>Haz seleccionado Mirinda <srai> FINALIZAR </srai></template>
+</category>
+<category>
+    <pattern>COCA</pattern>
+    <template>Haz seleccionado Coca Cola <srai> FINALIZAR </srai></template>
+</category>
+<category>
+    <pattern>COCA *</pattern>
+    <template>Haz seleccionado Coca Cola <srai> FINALIZAR </srai></template>
+</category>
+<category>
+    <pattern>* COLA</pattern>
+    <template>Haz seleccionado Coca Cola <srai> FINALIZAR </srai></template>
+</category>
+
+<category>
+    <pattern>SQUIRT</pattern>
+    <template>Haz seleccionado Squirt <srai> FINALIZAR </srai></template>
+</category>
+
+</aiml>
